@@ -1,11 +1,13 @@
+# Core FastAPI stack
 fastapi==0.118.0
 uvicorn==0.37.0
 pydantic==2.11.9
 
+# HTTP clients / async support
 httpx==0.28.1
 anyio==4.11.0
-
 requests==2.32.5
 
+# GenAI (Google) - compatible with tiktoken prebuilt wheel
 genai==2.1.0
-tiktoken==0.3.2
+tiktoken>=0.3.2,<0.4.0
